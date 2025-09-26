@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selector Types</title>
+  <style>
+    /* Common Box Style */
+    .box {
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px auto;
+      width: 60%;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    /* Section Colors */
+    .simple-selectors     { background-color: #FFEBEE; }
+    .combinator-selectors { background-color: #E8F5E9; }
+    .pseudo-classes       { background-color: #E3F2FD; }
+    .pseudo-elements      { background-color: #FFF3E0; }
+    .attribute-selectors  { background-color: #F3E5F5; }
+
+    /* ----------- SIMPLE SELECTORS ----------- */
+    h2 {
+      text-decoration: underline;
+    }
+
+    #special {
+      color: green;
+      font-weight: bold;
+    }
+
+    .note {
+      background-color: yellow;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* ----------- COMBINATOR SELECTORS ----------- */
+    .combinator-example div p {
+      color: navy;
+    }
+
+    .combinator-example > span {
+      font-weight: bold;
+    }
+
+    .combinator-example + p {
+      color: crimson;
+    }
+
+    .combinator-example ~ p {
+      font-style: italic;
+    }
+
+    /* ----------- PSEUDO-CLASS SELECTORS ----------- */
+    .pseudo-class a:hover {
+      color: white;
+      background-color: orange;
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+
+    .pseudo-class li:first-child {
+      color: blue;
+    }
+
+    .pseudo-class input:focus {
+      border: 2px solid purple;
+    }
+
+    /* ----------- PSEUDO-ELEMENT SELECTORS ----------- */
+    .pseudo-element p::first-letter {
+      font-size: 200%;
+      color: darkred;
+    }
+
+    .pseudo-element h3::after {
+      content: " ✔️";
+      color: green;
+    }
+
+    /* ----------- ATTRIBUTE SELECTORS ----------- */
+    input[type="text"] {
+      background-color: #e0f7fa;
+      padding: 4px;
+    }
+
+    a[target="_blank"] {
+      color: teal;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- SIMPLE SELECTORS -->
+  <div class="box simple-selectors">
+    <h2>Simple Selectors</h2>
+    <p id="special">This is styled using an ID selector.</p>
+    <p class="note">This paragraph uses a class selector.</p>
+    <p>This uses element & universal selectors.</p>
+  </div>
+
+  <!-- COMBINATOR SELECTORS -->
+  <div class="box combinator-selectors">
+    <h2>Combinator Selectors</h2>
+    <div class="combinator-example">
+      <p>Descendant selector (div p)</p>
+      <span>Child selector (div > span)</span>
+    </div>
+    <p>Adjacent sibling (div + p)</p>
+    <p>General sibling (div ~ p)</p>
+  </div>
+
+  <!-- PSEUDO-CLASS SELECTORS -->
+  <div class="box pseudo-classes">
+    <h2>Pseudo-Class Selectors</h2>
+    <ul class="pseudo-class">
+      <li>First item (:first-child)</li>
+      <li>Second item</li>
+    </ul>
+    <p class="pseudo-class">
+      <a href="#">Hover over this link</a>
+    </p>
+    <input class="pseudo-class" type="text" placeholder="Focus on me">
+  </div>
+
+  <!-- PSEUDO-ELEMENT SELECTORS -->
+  <div class="box pseudo-elements">
+    <h2>Pseudo-Element Selectors</h2>
+    <div class="pseudo-element">
+      <p>This paragraph uses ::first-letter</p>
+      <h3>This heading has ::after</h3>
+    </div>
+  </div>
+
+  <!-- ATTRIBUTE SELECTORS -->
+  <div class="box attribute-selectors">
+    <h2>Attribute Selectors</h2>
+    <input type="text" placeholder="Text input [type='text']">
+    <br><br>
+    <a href="https://example.com" target="_blank">Link with target="_blank"</a>
+  </div>
+
+</body>
+</html>

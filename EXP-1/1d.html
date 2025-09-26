@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thumbnail Image Gallery</title>
+  <style>
+    /* Basic styling for gallery */
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .gallery a img {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+    .gallery a img:hover {
+      border-color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Gallery with Thumbnails</h1>
+
+  <div class="gallery">
+    <a href="https://www.workitdaily.com/media-library/image.jpg?id=26951082&width=1200&height=600&coordinates=0%2C75%2C0%2C75" target="_blank">
+      <img src="https://www.workitdaily.com/media-library/image.jpg?id=26951082&width=1200&height=600&coordinates=0%2C75%2C0%2C75" alt="Image 1 Thumbnail" width="100" height="100" />
+    </a>
+    <a href="https://static.boredpanda.com/blog/wp-content/uploads/2018/08/5b72822119a08_Tj9_vp3oPT0YqwhzZUtfBIVHcz3JdsGXPe6RQMetKCA__700.jpg" target="_blank">
+      <img src="https://static.boredpanda.com/blog/wp-content/uploads/2018/08/5b72822119a08_Tj9_vp3oPT0YqwhzZUtfBIVHcz3JdsGXPe6RQMetKCA__700.jpg" alt="Image 2 Thumbnail" width="100" height="100" />
+    </a>
+    <a href="https://images.stockcake.com/public/2/3/a/23af9c63-075a-4371-be6d-378302a8d420_large/puppy-with-toy-stockcake.jpg" target="_blank">
+      <img src="https://images.stockcake.com/public/2/3/a/23af9c63-075a-4371-be6d-378302a8d420_large/puppy-with-toy-stockcake.jpg" alt="Image 3 Thumbnail" width="100" height="100" />
+    </a>
+    <a href="https://i.pinimg.com/736x/e8/31/f2/e831f23e4607c2fe1cacbf3aca8b4277.jpg" target="_blank">
+      <img src="https://i.pinimg.com/736x/e8/31/f2/e831f23e4607c2fe1cacbf3aca8b4277.jpg" alt="Image 4 Thumbnail" width="100" height="100" />
+    </a>
+  </div>
+  
+</body>
+</html>
+

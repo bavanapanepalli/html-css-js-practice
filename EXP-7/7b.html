@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object Example</title>
+</head>
+<body>
+
+    <h2>Window Object Demo</h2>
+    <button onclick="useWindowMethods()">Click to Interact</button>
+
+    <script>
+        function useWindowMethods() {
+            // Alert box using window.alert
+            window.alert("Welcome to the Window Object Demo!");
+
+            // Confirm box using window.confirm
+            var confirmed = window.confirm("Do you want to continue?");
+            if (!confirmed) {
+                window.alert("You chose to cancel. Exiting...");
+                return;
+            }
+
+            // Prompt box using window.prompt
+            var name = window.prompt("Enter your name:");
+            if (name) {
+                window.alert("Hello, " + name + "!");
+            } else {
+                window.alert("You didn't enter a name.");
+            }
+
+            // Display window size
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            window.alert("Current window size:\nWidth: " + width + "px\nHeight: " + height + "px");
+
+            // Open a new window
+            window.open("https://www.example.com", "_blank");
+        }
+    </script>
+
+</body>
+</html>

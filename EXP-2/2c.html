@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2 align="center">Student Registration Form</h2>
+
+    <form>
+        <table border="1" cellpadding="10" cellspacing="0" align="center">
+
+            <tr>
+                <td><label for="fname">Full Name:</label></td>
+                <td><input type="text" id="fname" name="fullname" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" min="1" max="100"></td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" id="male"> <label for="male">Male</label>
+                    <input type="radio" name="gender" value="Female" id="female"> <label for="female">Female</label>
+                    <input type="radio" name="gender" value="Other" id="other"> <label for="other">Other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="Reading" id="reading"> <label for="reading">Reading</label>
+                    <input type="checkbox" name="hobby" value="Music" id="music"> <label for="music">Music</label>
+                    <input type="checkbox" name="hobby" value="Travel" id="travel"> <label for="travel">Travel</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="course">Select Course:</label></td>
+                <td>
+                    <select id="course" name="course">
+                        <option value="">--Select--</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="B.Sc">B.Sc</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="MBA">MBA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" cols="30"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
