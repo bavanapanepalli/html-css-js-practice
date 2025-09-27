@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Different Ways to Take Input</title>
+</head>
+<body>
+  <h2>Different Ways to Take Input in JavaScript</h2>
+
+  <!-- Input using prompt -->
+  <script>
+    let userName = prompt("Enter your name:");
+
+    // Input using HTML input box
+    document.write(`
+      <br><label for="age">Enter your age: </label>
+      <input type="number" id="age" />
+      <button onclick="showAge()">Submit Age</button>
+      <p id="ageOutput"></p>
+    `);
+
+    function showAge() {
+      let age = document.getElementById("age").value;
+      document.getElementById("ageOutput").innerText = "You entered age: " + age;
+    }
+  </script>
+
+  <p>Your name is: <b><span id="nameOutput"></span></b></p>
+
+  <script>
+    document.getElementById("nameOutput").innerText = userName;
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Display Output Methods</title>
+</head>
+<body>
+  <h2>Different Ways to Display Output in JavaScript</h2>
+
+  <p id="output"></p>
+
+  <script>
+    // Using alert box
+    alert("Output using alert box");
+
+    // Using console.log
+    console.log("Output using console.log");
+
+    // Writing to the webpage (DOM)
+    document.getElementById("output").innerText = "Output using document.getElementById().innerText";
+
+    // Using document.write (not recommended after page load)
+    document.write("<p>Output using document.write()</p>");
+  </script>
+</body>
+</html>

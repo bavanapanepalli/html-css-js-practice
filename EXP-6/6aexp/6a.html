@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Internal and External JavaScript</title>
+  <!-- External JavaScript file -->
+  <script src="6aexternal.js"></script>
+  <script>
+    // Internal JavaScript
+    function internalFunction() {
+      alert("Hello from internal JavaScript!");
+    }
+  </script>
+</head>
+<body>
+  <h2>Internal and External JavaScript Example</h2>
+  <button onclick="internalFunction()">Run Internal JS</button>
+  <button onclick="externalFunction()">Run External JS</button>
+</body>
+</html>
